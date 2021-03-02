@@ -16,7 +16,7 @@
 :root{
       --primary-font:'Raleway', sans-serif;
       --secondary-font: 'Roboto', sans-serif;
-      --primary-color:rgba(41, 41, 70, 0.6);
+      --primary-color: #4A4959;
       --light-color: #efefef;
       --dark-color:#3c3c3c;
        
@@ -244,6 +244,7 @@ ul{
     width: 100%;
     z-index: 99;
     background-color:var(--primary-color);
+    opacity: .8;
 }
 .nav1-item a{
     padding: .2rem 1rem;
