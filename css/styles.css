@@ -236,7 +236,8 @@ ul{
     color: #f768ad;
 }
 .enter-btn:hover{
-    transform: translate(8px);
+    outline: none;
+    transform: scale(1.1);
 }
 .nav{
     position: absolute;
@@ -760,7 +761,7 @@ footer .container .sec.aboutus  p{
 /*enter html*/
 
 #sign-up{
-    background: url(../image/b102.jpg);
+    background-color:rgba(179, 179, 179, 0.3) ;
     width: 100%;
     height: 120vh;
     background-attachment:fixed;
@@ -776,7 +777,6 @@ footer .container .sec.aboutus  p{
     top: 56%;
     position:absolute;
     transform: translate(-50%,-50%);
-    box-shadow: 2px 2px 90px 30px rgba(66,57,238,.2) ;
     border-radius: 10px;
     opacity: .9;
     display: flex;
@@ -802,14 +802,14 @@ footer .container .sec.aboutus  p{
 .text-container{
     width: 50%;
     height: 100%;
-    background-color: rgba(58, 47, 78, 0.7);
+    background-color: rgba(58, 47, 78, 0.6);
     border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .heading1{
-    font-family: calibri;
+font-family: calibri;
    color: rgba(8, 7, 7);
    font-size: 3rem;
    margin-top:3rem;
@@ -825,7 +825,8 @@ font-family: calibri;
 .text{
     width: 350px;
     height: 50px;
-    box-shadow: 2px 6px 10px rgba(12, 12, 17, 0.8);
+    box-shadow: 2px 7px 10px rgba(190, 190, 190, 0.8);
+    border: 1px solid rgba(161, 161, 161, 0.4);
     background-color: rgb(234, 233, 235);
     border-radius: 30px;
     display: flex;
@@ -833,7 +834,6 @@ font-family: calibri;
     margin-bottom: 35px;
     transition: all .4s ease;
 }
-
 .text input{
     height: 40px;
     width: 80%;
@@ -843,10 +843,32 @@ font-family: calibri;
     margin: 10px;
     background-color: rgb(234, 233, 235);
 }
-input:focus .text{
-    border: 1px  solid rgb(47, 37, 94);
-}
 .text i{
+    margin-left: 20px;
+    font-size: 2rem;
+}
+.text2{
+    width: 350px;
+    height: 50px;
+    box-shadow: 2px 7px 10px rgba(42, 46, 71, 0.8);
+    border: 1px solid rgba(161, 161, 161, 0.4);
+    background-color: rgb(234, 233, 235);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    transition: all .4s ease;
+}
+.text2 input{
+    height: 40px;
+    width: 80%;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    margin: 10px;
+    background-color: rgb(234, 233, 235);
+}
+.text2 i{
     margin-left: 20px;
     font-size: 2rem;
 }
@@ -856,15 +878,17 @@ input:focus .text{
     outline: none;
     border: none;
     border-radius: 20px;
-    background: linear-gradient(-50deg,#4a4463,rgb(194, 141, 141) 85%);
+     background-color: #4A4959;
     color: #ffffff;
     font-weight: 300;
     letter-spacing: 1px;
     font-size: 1.6rem;
-    box-shadow: 2px 5px 6px rgba(12, 12, 17, 0.8);
+   
     transition: all .3s ease;
 }
-
+.btn-sign-up:hover{
+    background-color: #f768ad;
+}
 .btn-sign-up:active{
     transform: scale(1.1);
 }
@@ -875,18 +899,19 @@ input:focus .text{
 /*Contact.html*/
 #contact{
     position: relative;
-    min-height: 100vh;
+    min-height: 130vh;
     padding:10px 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background:linear-gradient(0deg,rgba(0,0,0, 0.7),rgba(0, 0, 0,.4)),url('../image/b88.jpg');
+    background:url('../image/b88.jpg');
     background-size: cover;
 }
 #contact .content{
     max-width: 800px;
     text-align: center;
+    padding-top: 90px;
 }
 .content h2{
     font-size: 2.5rem;
@@ -905,13 +930,13 @@ input:focus .text{
     margin-top: 30px;
 }
 .container .contactinfo{
-    width: 43%;
+    width: 44%;
     display: flex;
     flex-direction: column;
     background-color:rgba(0, 0, 0, 0.2);
     box-shadow: 2px 2px 30px rgba(0,0,0,.8);
     opacity: .9;
-    padding:10px 40px;
+   padding-top: 10px;
  
 }
 .container .contactinfo .contact-box{
@@ -1021,10 +1046,24 @@ input:focus .text{
     background-color: #f768ad;
     color: rgb(36, 33, 44);
 }
+.container .deliveryinfo{
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 30px rgba(0,0,0,.8);
+    opacity: .9;
+    padding:20px 40px;
+ 
+}
+.delivery-text{
+    color: #efefef;
+    display: flex;
+    flex-direction: row;
+}
 .contact-footer{
-    min-height: 8vh;
+    min-height: 9vh;
     background-color: #4A4959;
-    
 }
 .contact-copyright{
     width: 100%; 
