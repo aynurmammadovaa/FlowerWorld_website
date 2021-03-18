@@ -9,7 +9,7 @@
     padding: 0;
 }
 
-/*general setting  rgb(194, 141, 141);*/
+/*general setting  rgb(194, 141, 141); #110b31;*/
 
 * {
     margin: 0;
@@ -20,7 +20,7 @@
 :root {
     --primary-font: 'Raleway', sans-serif;
     --secondary-font: 'Roboto', sans-serif;
-    --primary-color: #4A4959;
+    --primary-color: #453f50;
     --light-color: #efefef;
     --dark-color: #3c3c3c;
 }
@@ -34,6 +34,7 @@ html {
 
 body {
     background-color: #fcfcfc;
+    font-family: var(--secondary-font);
 }
 
 section {
@@ -495,14 +496,16 @@ section#galery {
 /*Slider*/
 
 .slider-title p {
-    font-size: 3rem;
+    font-size:2.4rem;
     margin-bottom: 20px;
-    margin-top: 0px;
+    margin-top: 20px;
     width: 100%;
     text-align: center;
     position: relative;
-    color: rgb(97, 97, 97);
-    font-weight: 500;
+    color: rgb(133, 133, 133);
+    font-weight: 100;
+    letter-spacing: .1rem;
+    font-family: var(--primary-font);
 }
 
 hr {
@@ -1302,8 +1305,8 @@ input:focus::placeholder, .text:focus+i {
     width: 280px;
     height: 400px;
     transform: translate(-50%, -50%);
-    box-shadow: 0 20px 40px rgba(170, 170, 170, 0.2);
-    border-radius: 10px;
+   box-shadow: 0 4px 9px 0 rgb(45 54 76 / 40%);
+    border-radius: 15px;
     overflow: hidden;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -1317,7 +1320,6 @@ input:focus::placeholder, .text:focus+i {
 .product .imgbox img {
     display: block;
     width: 100%;
-    border-radius: 4px;
     transition: all .2s ease;
 }
 
@@ -1326,17 +1328,15 @@ input:focus::placeholder, .text:focus+i {
     width: 100%;
     bottom: -100px;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 5px 6px rgb(0 0 0 / 6%);
     padding: 10px;
     box-sizing: border-box;
-    border-radius: 4px;
     transition: all .5s ease;
     margin: 10px auto 0;
 }
 
 .product:hover .bouquet-text {
     bottom: 0;
-    box-shadow: 10px 5px 6px rgb(0, 0, 0, .4);
+   
 }
 
 .bouquet-right .bouquet-text h5 {
@@ -1389,7 +1389,7 @@ label {
     text-align: center;
     margin: 10px 20px 10px;
     text-decoration: none;
-    border-radius: 45px;
+    border-radius: 14px;
     transition: .2s;
     cursor: pointer;
     font-size: 13px;
@@ -1475,16 +1475,16 @@ footer .container .sec1.aboutus {
 
 /**/
 
-#popup {
+/* #popup {
     position: fixed;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 800px;
     margin-top: 20px;
-    height: 450px;
+    height: 490px;
     background-color: #ffffff;
-    box-shadow: 2px 5px 16px rgba(153, 153, 153, 0.7);
+    box-shadow: 2px 5px 16px rgba(122, 122, 122, 0.7);
     border-radius: 2px;
     visibility: hidden;
     opacity: 0;
@@ -1492,11 +1492,86 @@ footer .container .sec1.aboutus {
 }
 
 #popup.active {
-    top: 50%;
+    top: 55%;
     visibility: visible;
     opacity: 1;
     transition: .5s;
 }
+.popup .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#popup img{
+    width: 350px;
+    height: 450px;
+    margin:20px;
+    border-radius: 3px;
+   
+}
+.popup-text{
+    margin-right: 50px;
+}
+.popup-text h1{
+    margin: 50px 0 10px 0;
+    font-weight: 300;
+    font-size: 22px;
+    font-family: var(--secondary-font);
+}
+.popup-text p{
+    font-size: 15px;
+    
+}
+.popup-text span{
+    margin-top: 15px;
+    margin-left:27rem;
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 20px;
+    color: #ec4d98;
+   
+}
+.popup-text button{
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 160px;
+  margin-top: 190px;
+  margin-bottom: 19px;
+  cursor: pointer;
+  border: px solid #ec4d98;
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(153, 153, 153, 0.12);
+  color: #ec4d98;
+  font-weight: 500;
+  font-family: var(--secondary-font);
+}
+.popup-text .buy{
+    background-color: #ec4d98;
+    font-weight: 500;
+    color: white;
+  
+}
+.popup-text  .cart{
+    background-color: #f3f0f1;
+    margin-left: 10px;
+    border: 1px solid #f7b7d0;   
+}
+.popup-text a{
+    font-size: 14px;
+    padding: 10px 149px;
+    box-sizing: border-box;
+    background-color: #f3f0f1;
+    cursor: pointer;
+    border: 1px solid #f7b7d0;
+    outline: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(153, 153, 153, 0.12);
+    color: #ec4d98;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+
+} */
 
 /*
 .center{
